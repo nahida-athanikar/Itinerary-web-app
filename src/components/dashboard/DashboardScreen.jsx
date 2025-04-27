@@ -2,6 +2,9 @@ import StatusBar from '../../components/common/StatusBar';
 
 import UpcomingTripCard from '../../components/dashboard/UpcomingTripCard'; 
 
+import FlightDetailsCard from './FlightDetailsCard'; 
+
+
 function DashboardScreen() {
   return (
     <div className="min-h-screen bg-[#0B0809] text-white flex flex-col item-center">
@@ -33,17 +36,14 @@ function DashboardScreen() {
           {/* Upcoming Trip */}
           <div className="bg-gray-800 rounded-lg">
             
-            <div className="bg-gray-700 h-40 rounded-lg flex items-center justify-center">
+            <div className="bg-gray-700 h-80 rounded-lg flex items-center justify-center">
                 <UpcomingTripCard />
             </div>
           </div>
 
           {/* Flight Details */}
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2">Flight Details</h2>
-            <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
-              Flight Info Card
-            </div>
+          <div className="rounded-lg">
+            <FlightDetailsCard />
           </div>
 
           {/* Accommodation */}
