@@ -42,7 +42,7 @@ function DashboardScreen() {
           </div>
 
           {/* Flight Details */}
-          <div className="rounded-lg">
+          <div className="rounded-lg -mt-4">
             <FlightDetailsCard />
           </div>
 

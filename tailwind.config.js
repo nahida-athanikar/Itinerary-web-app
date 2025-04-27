@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         moderniz: ['Moderniz', 'sans-serif'],
+        mont: ['Montserrat', 'regular']
       },
     },
   },
