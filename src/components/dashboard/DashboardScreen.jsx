@@ -62,12 +62,28 @@ function DashboardScreen() {
       </div>
 
       {/* Bottom Navbar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex justify-around">
-        <button>🏠</button>
-        <button>🔍</button>
-        <button>➕</button>
-        <button>🤍</button>
-        <button>👤</button>
+      <div className="fixed bottom-0 left-0 right-0 bg-[#121827] p-3 flex justify-around">
+
+        <button>
+          <img src="/src/assets/menu.png" alt="Home" className="h-15 w-15" />
+        </button>
+
+        <button>
+          <img src="/src/assets/search.png" alt="Search" className="h-15 w-15" />
+        </button>
+
+        <button>
+          <img src="/src/assets/plus.png" alt="Add" className="h-15 w-15" />
+        </button>
+
+        <button>
+          <img src="/src/assets/heart.png" alt="Favorites" className="h-15 w-15" />
+        </button>
+
+        <button>
+          <img src="/src/assets/profile.png" alt="Profile" className="h-15 w-15" />
+        </button>
+
       </div>
 
     </div>
