@@ -4,6 +4,9 @@ import UpcomingTripCard from '../../components/dashboard/UpcomingTripCard';
 
 import FlightDetailsCard from './FlightDetailsCard'; 
 
+import AccomodationSection from "../../components/dashboard/AccommodationSection";
+
+import ActivitySection from "./ActivitySection";
 
 function DashboardScreen() {
   return (
@@ -47,19 +50,9 @@ function DashboardScreen() {
           </div>
 
           {/* Accommodation */}
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2">Accommodation</h2>
-            <div className="flex space-x-4 overflow-x-auto">
-              <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
-                Hotel 1
-              </div>
-              <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
-                Hotel 2
-              </div>
-              <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
-                Hotel 3
-              </div>
-            </div>
+          <div className="bg-#0B0809 p-4 rounded-lg">
+              <AccomodationSection />
+
           </div>
 
           {/* Activities */}

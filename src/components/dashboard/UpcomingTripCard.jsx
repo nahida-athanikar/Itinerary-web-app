@@ -1,5 +1,6 @@
 function UpcomingTripCard() {
   return (
+    
     <div className="relative w-[400px] h-[320px] rounded-xl overflow-hidden">
       
       {/* Background Image */}
