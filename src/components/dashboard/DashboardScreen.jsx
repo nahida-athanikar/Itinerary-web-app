@@ -50,22 +50,13 @@ function DashboardScreen() {
           </div>
 
           {/* Accommodation */}
-          <div className="bg-#0B0809 p-4 rounded-lg">
+          <div className="bg-#0B0809 p-2 rounded-lg">
               <AccomodationSection />
-
           </div>
 
           {/* Activities */}
-          <div className="bg-gray-800 p-4 rounded-lg">
-            <h2 className="text-xl font-semibold mb-2">Activities</h2>
-            <div className="space-y-4">
-              <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
-                Activity 1
-              </div>
-              <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
-                Activity 2
-              </div>
-            </div>
+          <div className="bg-#0B0809-800 p-1 rounded-lg">
+            <ActivitySection />
           </div>
         </div>
       </div>

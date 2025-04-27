@@ -32,7 +32,7 @@ const AccomodationSection = () => {
         {hotels.map((hotel, index) => (
           <div
             key={index}
-            className="bg-gray-600 rounded-2xl w-[198px] flex-shrink-0"
+            className="bg-[#4D4D4D] rounded-2xl w-[198px] flex-shrink-0"
           >
             {/* Hotel Image */}
             <img
