@@ -1,0 +1,87 @@
+import StatusBar from '../../components/common/StatusBar';
+
+import UpcomingTripCard from '../../components/dashboard/UpcomingTripCard'; 
+
+function DashboardScreen() {
+  return (
+    <div className="min-h-screen bg-[#0B0809] text-white flex flex-col">
+      <StatusBar />
+      {/* Header */}
+      <div className="flex justify-between items-center px-5 pt-8">
+          <div>
+            <h1 className="text-2xl font-bold text-white">Hello Chhavi!</h1>
+            <p className="text-gray-400 text-sm mt-1">Ready for the trip?</p>
+          </div>
+
+      {/* Profile Circle */}
+      <div className="w-10 h-10 bg-[#FF7339]  rounded-full flex items-center justify-center text-white font-bold text-lg">
+        C
+      </div>
+    </div>
+
+
+
+      {/* Main Content */}
+      <div className="flex-1 overflow-y-auto space-y-6 px-4 pb-12">
+
+        {/* Upcoming Trip */}
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">Your Upcoming Trip</h2>
+          <div className="bg-gray-700 h-40 rounded-lg flex items-center justify-center">
+              <UpcomingTripCard />
+          </div>
+        </div>
+
+        {/* Flight Details */}
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">Flight Details</h2>
+          <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
+            Flight Info Card
+          </div>
+        </div>
+
+        {/* Accommodation */}
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">Accommodation</h2>
+          <div className="flex space-x-4 overflow-x-auto">
+            <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
+              Hotel 1
+            </div>
+            <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
+              Hotel 2
+            </div>
+            <div className="bg-gray-700 w-40 h-28 rounded-lg flex items-center justify-center">
+              Hotel 3
+            </div>
+          </div>
+        </div>
+
+        {/* Activities */}
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">Activities</h2>
+          <div className="space-y-4">
+            <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
+              Activity 1
+            </div>
+            <div className="bg-gray-700 h-24 rounded-lg flex items-center justify-center">
+              Activity 2
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Bottom Navbar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex justify-around">
+        <button>🏠</button>
+        <button>🔍</button>
+        <button>➕</button>
+        <button>🤍</button>
+        <button>👤</button>
+      </div>
+
+    </div>
+  );
+}
+
+export default DashboardScreen;
