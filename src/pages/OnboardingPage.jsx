@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function OnboardingPage() {
   return (
-    <div className="min-h-screen bg-black flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <OnboardingScreen />
     </div>
   );

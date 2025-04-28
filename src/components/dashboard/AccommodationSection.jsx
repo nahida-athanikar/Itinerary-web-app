@@ -5,7 +5,8 @@ const hotels = [
     name: "Shinagawa Prince Hotel",
     checkIn: "26.01.2025, 11:15 pm",
     checkOut: "28.01.2025, 11:15 am",
-    statusImage: "/src/assets/confirmed.png",
+    duration: "2 Night",
+    statusText: "Confirmed",
     ratingImage: "/src/assets/4star.png",
     hotelImage: "/src/assets/hotel2.png",
   },
@@ -13,7 +14,8 @@ const hotels = [
     name: "Mercure Tokyo Hotel",
     checkIn: "28.01.2025, 6:00 pm",
     checkOut: "30.01.2025, 11:15 am",
-    statusImage: "/src/assets/pending.png",
+    duration: "2 Night",
+    statusText: "Pending",
     ratingImage: "/src/assets/41star.png",
     hotelImage: "/src/assets/hotel1.png",
   },
@@ -24,7 +26,11 @@ const AccomodationSection = () => {
     <div className="mt-6">
       {/* Title and See All */}
       <div className="flex justify-between items-center mb-2">
-        <img src="/src/assets/accomodation.png" alt="Accomodation" className="-mt-10" />
+        <img
+          src="/src/assets/accomodation.png"
+          alt="Accomodation"
+          className="-mt-10"
+        />
       </div>
 
       {/* Horizontal Scroll */}
@@ -57,13 +63,23 @@ const AccomodationSection = () => {
                 <span className="font-regular">Check in:</span> {hotel.checkIn}
               </div>
               <div className="mt-1 mb-2">
-                <span className="font-regular">Check out:</span> {hotel.checkOut}
+                <span className="font-regular">Check out:</span>{" "}
+                {hotel.checkOut}
               </div>
             </div>
 
             {/* Nights and Status */}
-            <div className="flex justify-center items-center pb-3">
-              <img src={hotel.statusImage} alt="Status" className="h-5" />
+            <div className="font-mont font-semibold text-xs flex justify-between items-center p-3">
+              <p>{hotel.duration}</p>
+              <p
+                className={`${
+                  hotel.statusText === "Confirmed"
+                    ? "text-green-400"
+                    : "text-red-500"
+                }`}
+              >
+                {hotel.statusText}
+              </p>
             </div>
           </div>
         ))}
