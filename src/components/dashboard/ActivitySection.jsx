@@ -86,7 +86,7 @@ const ActivitySection = () => {
       </div>
 
       {/* Activity Cards */}
-      <div className="flex flex-col space-y-4 mb-6">
+      <div className="flex flex-col space-y-6">
         {activities.map((activity, index) => (
           <div key={index} className="flex bg-[#4D4D4D] rounded-xl items-center space-x-2">
             <img src={activity.image} alt={activity.title} className="w-[127px] h-[127px] rounded-md object-cover" />

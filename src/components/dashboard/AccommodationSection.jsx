@@ -19,6 +19,15 @@ const hotels = [
     ratingImage: "/src/assets/41star.png",
     hotelImage: "/src/assets/hotel1.png",
   },
+  {
+    name: "Shinagawa Prince Hotel",
+    checkIn: "26.01.2025, 11:15 pm",
+    checkOut: "28.01.2025, 11:15 am",
+    duration: "2 Night",
+    statusText: "Confirmed",
+    ratingImage: "/src/assets/4star.png",
+    hotelImage: "/src/assets/hotel2.png",
+  },
 ];
 
 const AccomodationSection = () => {
@@ -34,11 +43,11 @@ const AccomodationSection = () => {
       </div>
 
       {/* Horizontal Scroll */}
-      <div className="flex space-x-4 overflow-x-auto scrollbar-hide">
+      <div className="flex space-x-4 overflow-x-auto scrollbar-hide ">
         {hotels.map((hotel, index) => (
           <div
             key={index}
-            className="bg-[#4D4D4D] rounded-2xl w-[198px] flex-shrink-0"
+            className="bg-[#4D4D4D] rounded-2xl w-[198px] flex-shrink-0 "
           >
             {/* Hotel Image */}
             <img
